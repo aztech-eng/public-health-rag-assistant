@@ -1,0 +1,2 @@
+"""Minimal RAG MVP package."""
+

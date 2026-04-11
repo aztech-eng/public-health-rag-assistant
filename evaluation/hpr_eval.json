@@ -1,0 +1,157 @@
+[
+  {
+    "question": "What is the purpose of the Health Protection Report?",
+    "type": "factual",
+    "expected_keywords": ["purpose", "health protection", "reporting", "surveillance"],
+    "expected_docs": [],
+    "edge_case": false
+  },
+  {
+    "question": "What types of health threats are monitored in the reports?",
+    "type": "factual",
+    "expected_keywords": ["infectious diseases", "outbreaks", "health threats", "monitoring"],
+    "expected_docs": [],
+    "edge_case": false
+  },
+  {
+    "question": "What surveillance methods are used in public health monitoring?",
+    "type": "factual",
+    "expected_keywords": ["surveillance", "laboratory", "case reporting", "monitoring"],
+    "expected_docs": [],
+    "edge_case": false
+  },
+  {
+    "question": "Which organisations contribute to the Health Protection Report?",
+    "type": "factual",
+    "expected_keywords": ["UKHSA", "public health", "laboratories", "contributors"],
+    "expected_docs": [],
+    "edge_case": false
+  },
+  {
+    "question": "What data sources are used to track disease outbreaks?",
+    "type": "factual",
+    "expected_keywords": ["laboratory data", "surveillance data", "notifications", "outbreak reports"],
+    "expected_docs": [],
+    "edge_case": false
+  },
+  {
+    "question": "What are the key differences between the 2025 and 2026 reports?",
+    "type": "comparison",
+    "expected_keywords": ["2025", "2026", "differences", "trends"],
+    "expected_docs": [
+      "HPR volume 19 issue 9_ news (25 September 2025) - GOV.UK.pdf",
+      "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf"
+    ],
+    "edge_case": false
+  },
+  {
+    "question": "How have disease trends changed between 2025 and 2026?",
+    "type": "comparison",
+    "expected_keywords": ["disease trends", "increase", "decrease", "2025", "2026"],
+    "expected_docs": [
+      "HPR volume 19 issue 9_ news (25 September 2025) - GOV.UK.pdf",
+      "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf"
+    ],
+    "edge_case": false
+  },
+  {
+    "question": "What new public health concerns appear in the 2026 report?",
+    "type": "comparison",
+    "expected_keywords": ["2026", "new concerns", "public health", "emerging"],
+    "expected_docs": [
+      "HPR volume 20 issue 1_ news (29 January and 5 February 2026) - GOV.UK.pdf",
+      "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf"
+    ],
+    "edge_case": false
+  },
+  {
+    "question": "How do surveillance approaches differ across reports?",
+    "type": "comparison",
+    "expected_keywords": ["surveillance approaches", "methods", "differences", "reports"],
+    "expected_docs": [
+      "HPR volume 19 issue 3_ news (27 and 31 March 2025) - GOV.UK.pdf",
+      "HPR volume 20 issue 1_ news (29 January and 5 February 2026) - GOV.UK.pdf"
+    ],
+    "edge_case": false
+  },
+  {
+    "question": "What changes in reporting or methodology are observed between volumes?",
+    "type": "comparison",
+    "expected_keywords": ["methodology", "reporting changes", "volumes", "comparative"],
+    "expected_docs": [
+      "HPR volume 19 issue 10_ news (30 and 31 October 2025) - GOV.UK.pdf",
+      "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf"
+    ],
+    "edge_case": false
+  },
+  {
+    "question": "What are the main public health risks identified across the reports?",
+    "type": "analysis",
+    "expected_keywords": ["public health risks", "outbreaks", "transmission", "risk factors"],
+    "expected_docs": [],
+    "edge_case": false
+  },
+  {
+    "question": "What strategies are recommended to reduce disease spread?",
+    "type": "analysis",
+    "expected_keywords": ["prevention", "control measures", "surveillance", "interventions"],
+    "expected_docs": [],
+    "edge_case": false
+  },
+  {
+    "question": "How do the reports suggest improving health protection systems?",
+    "type": "analysis",
+    "expected_keywords": ["improving systems", "health protection", "capacity", "response"],
+    "expected_docs": [],
+    "edge_case": false
+  },
+  {
+    "question": "What role does data analysis play in public health decision-making?",
+    "type": "analysis",
+    "expected_keywords": ["data analysis", "decision-making", "surveillance", "evidence"],
+    "expected_docs": [],
+    "edge_case": false
+  },
+  {
+    "question": "What are the most significant findings across the reports?",
+    "type": "analysis",
+    "expected_keywords": ["significant findings", "key findings", "trends", "impact"],
+    "expected_docs": [],
+    "edge_case": false
+  },
+  {
+    "question": "What vaccination policy changes are proposed for 2030?",
+    "type": "edge",
+    "expected_keywords": [],
+    "expected_docs": [],
+    "edge_case": true
+  },
+  {
+    "question": "What AI systems are currently deployed nationwide in UK public health?",
+    "type": "edge",
+    "expected_keywords": [],
+    "expected_docs": [],
+    "edge_case": true
+  },
+  {
+    "question": "What budget allocation changes are detailed for future health services?",
+    "type": "edge",
+    "expected_keywords": [],
+    "expected_docs": [],
+    "edge_case": true
+  },
+  {
+    "question": "What international agreements are introduced in these reports?",
+    "type": "edge",
+    "expected_keywords": [],
+    "expected_docs": [],
+    "edge_case": true
+  },
+  {
+    "question": "What pharmaceutical treatments are newly approved according to the reports?",
+    "type": "edge",
+    "expected_keywords": [],
+    "expected_docs": [],
+    "edge_case": true
+  }
+]

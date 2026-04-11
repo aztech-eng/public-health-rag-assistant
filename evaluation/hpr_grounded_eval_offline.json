@@ -1,0 +1,714 @@
+{
+  "dataset_name": "hpr_grounded_eval_offline",
+  "version": "1.0",
+  "generated_at_utc": "2026-04-09T17:00:34.400812+00:00",
+  "source_seed_file": "evaluation/hpr_eval.json",
+  "index_snapshot": {
+    "path": ".rag/index.json",
+    "created_at": "2026-04-09T16:33:17.397655+00:00",
+    "num_docs": 352
+  },
+  "scoring_focus": [
+    "groundedness",
+    "citation correctness",
+    "safe abstention"
+  ],
+  "records": [
+    {
+      "id": "hpr-grounded-001",
+      "question": "What is the purpose of the Health Protection Report?",
+      "type": "factual",
+      "expected_behavior": "answer",
+      "reference_answer": "All urgent infectious disease reports should be telephoned to the relevant local UKHSA Health Protection Team ( protection-team). [1] If 2 or more epidemiologically linked cases occur within an 8 week period involving a closed setting (such as a care home, residential facility or prison), the local health protection team ( should be contacted for ad... [2]",
+      "required_keywords": [
+        "purpose",
+        "health protection",
+        "reporting",
+        "surveillance"
+      ],
+      "evidence": [
+        {
+          "source": "HPR volume 19 issue 5_ news (21 and 29 May 2025) - GOV.UK.pdf",
+          "page": 7,
+          "chunk_id": "HPR volume 19 issue 5_ news (21 and 29 May 2025) - GOV.UK.pdf#p7#c0",
+          "retrieval_score": 3.361483,
+          "quote": "All urgent infectious disease reports should be telephoned to the relevant local UKHSA Health Protection Team ( protection-team)."
+        },
+        {
+          "source": "HPR volume 19 issue 10_ news (30 and 31 October 2025) - GOV.UK.pdf",
+          "page": 7,
+          "chunk_id": "HPR volume 19 issue 10_ news (30 and 31 October 2025) - GOV.UK.pdf#p7#c1",
+          "retrieval_score": 2.942468,
+          "quote": "If 2 or more epidemiologically linked cases occur within an 8 week period involving a closed setting (such as a care home, residential facility or prison), the local health protection team ( should be contacted for ad..."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": true,
+        "allow_abstention": false,
+        "min_supported_claims": 1
+      },
+      "notes": "Answer should stay within cited evidence and avoid unsupported claims."
+    },
+    {
+      "id": "hpr-grounded-002",
+      "question": "What types of health threats are monitored in the reports?",
+      "type": "factual",
+      "expected_behavior": "answer",
+      "reference_answer": "Communicable disease threats report: week 5, 24 to 30 January, 2026 ( data/monitoring/weekly-threats-reports) 3. [1] Communicable disease threats report: week 5, 24-30 January, 2026 ( data/monitoring/weekly-threats-reports) .UK [2]",
+      "required_keywords": [
+        "infectious diseases",
+        "outbreaks",
+        "health threats",
+        "monitoring"
+      ],
+      "evidence": [
+        {
+          "source": "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf",
+          "page": 9,
+          "chunk_id": "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf#p9#c0",
+          "retrieval_score": 7.438006,
+          "quote": "Communicable disease threats report: week 5, 24 to 30 January, 2026 ( data/monitoring/weekly-threats-reports) 3."
+        },
+        {
+          "source": "HPR volume 20 issue 1_ news (29 January and 5 February 2026) - GOV.UK.pdf",
+          "page": 4,
+          "chunk_id": "HPR volume 20 issue 1_ news (29 January and 5 February 2026) - GOV.UK.pdf#p4#c2",
+          "retrieval_score": 7.037461,
+          "quote": "Communicable disease threats report: week 5, 24-30 January, 2026 ( data/monitoring/weekly-threats-reports) .UK"
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": true,
+        "allow_abstention": false,
+        "min_supported_claims": 1
+      },
+      "notes": "Answer should stay within cited evidence and avoid unsupported claims."
+    },
+    {
+      "id": "hpr-grounded-003",
+      "question": "What surveillance methods are used in public health monitoring?",
+      "type": "factual",
+      "expected_behavior": "answer",
+      "reference_answer": "It is widely used in routine public health surveillance, monitoring seasonal respiratory disease and incidents such as the COVID- 19 pandemic. [1] In contrast to the statistical model used for the Agency\u2019s annual heat- associated mortality report ( mortality-reports), which considers observed daily deaths in a single summer, the model used for cold mortality mon... [2]",
+      "required_keywords": [
+        "surveillance",
+        "laboratory",
+        "case reporting",
+        "monitoring"
+      ],
+      "evidence": [
+        {
+          "source": "HPR volume 19 issue 8_ news (7, 14 and 28 August 2025) - GOV.UK.pdf",
+          "page": 5,
+          "chunk_id": "HPR volume 19 issue 8_ news (7, 14 and 28 August 2025) - GOV.UK.pdf#p5#c0",
+          "retrieval_score": 12.714649,
+          "quote": "It is widely used in routine public health surveillance, monitoring seasonal respiratory disease and incidents such as the COVID- 19 pandemic."
+        },
+        {
+          "source": "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf",
+          "page": 5,
+          "chunk_id": "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf#p5#c3",
+          "retrieval_score": 7.521993,
+          "quote": "In contrast to the statistical model used for the Agency\u2019s annual heat- associated mortality report ( mortality-reports), which considers observed daily deaths in a single summer, the model used for cold mortality mon..."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": true,
+        "allow_abstention": false,
+        "min_supported_claims": 1
+      },
+      "notes": "Answer should stay within cited evidence and avoid unsupported claims."
+    },
+    {
+      "id": "hpr-grounded-004",
+      "question": "Which organisations contribute to the Health Protection Report?",
+      "type": "factual",
+      "expected_behavior": "answer",
+      "reference_answer": "auris cases or experiencing outbreaks are expected to share information proactively with their local UKHSA Health Protection Team, and relevant NHS and independent hospitals and organisations (including commissioners,... [1] Foodborne outbreaks of norovirus inEngland, 2015 to 2023 It is well documented that every year norovirus outbreaks, driven by person- to-person transmission, contribute to winter pressures in health and social care se... [2]",
+      "required_keywords": [
+        "UKHSA",
+        "public health",
+        "laboratories",
+        "contributors"
+      ],
+      "evidence": [
+        {
+          "source": "HPR volume 19 issue 3_ news (27 and 31 March 2025) - GOV.UK.pdf",
+          "page": 5,
+          "chunk_id": "HPR volume 19 issue 3_ news (27 and 31 March 2025) - GOV.UK.pdf#p5#c1",
+          "retrieval_score": 8.824062,
+          "quote": "auris cases or experiencing outbreaks are expected to share information proactively with their local UKHSA Health Protection Team, and relevant NHS and independent hospitals and organisations (including commissioners,..."
+        },
+        {
+          "source": "HPR volume 19 issue 9_ news (25 September 2025) - GOV.UK.pdf",
+          "page": 3,
+          "chunk_id": "HPR volume 19 issue 9_ news (25 September 2025) - GOV.UK.pdf#p3#c0",
+          "retrieval_score": 6.426939,
+          "quote": "Foodborne outbreaks of norovirus inEngland, 2015 to 2023 It is well documented that every year norovirus outbreaks, driven by person- to-person transmission, contribute to winter pressures in health and social care se..."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": true,
+        "allow_abstention": false,
+        "min_supported_claims": 1
+      },
+      "notes": "Answer should stay within cited evidence and avoid unsupported claims."
+    },
+    {
+      "id": "hpr-grounded-005",
+      "question": "What data sources are used to track disease outbreaks?",
+      "type": "factual",
+      "expected_behavior": "answer",
+      "reference_answer": "Although there is limited data to quantify the overall scale of detections across all healthcare settings, indications of a wider rise have been seen within real-time syndromic surveillance, which can track scabies-li... [1] Salmonella Enteritidis is the most commonly reported salmonella serovar in England in humans (1) and, like all non-typhoidal salmonella, it can infect and cause disease in humans. [2] This indicates laboratory data.",
+      "required_keywords": [
+        "laboratory data",
+        "surveillance data",
+        "notifications",
+        "outbreak reports"
+      ],
+      "evidence": [
+        {
+          "source": "HPR volume 19 issue 10_ news (30 and 31 October 2025) - GOV.UK.pdf",
+          "page": 3,
+          "chunk_id": "HPR volume 19 issue 10_ news (30 and 31 October 2025) - GOV.UK.pdf#p3#c1",
+          "retrieval_score": 7.491836,
+          "quote": "Although there is limited data to quantify the overall scale of detections across all healthcare settings, indications of a wider rise have been seen within real-time syndromic surveillance, which can track scabies-li..."
+        },
+        {
+          "source": "HPR volume 19 issue 11_ news (4 December 2025) - GOV.UK.pdf",
+          "page": 3,
+          "chunk_id": "HPR volume 19 issue 11_ news (4 December 2025) - GOV.UK.pdf#p3#c0",
+          "retrieval_score": 7.454272,
+          "quote": "Salmonella Enteritidis is the most commonly reported salmonella serovar in England in humans (1) and, like all non-typhoidal salmonella, it can infect and cause disease in humans."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": true,
+        "allow_abstention": false,
+        "min_supported_claims": 1
+      },
+      "notes": "Answer should stay within cited evidence and avoid unsupported claims."
+    },
+    {
+      "id": "hpr-grounded-006",
+      "question": "What are the key differences between the 2025 and 2026 reports?",
+      "type": "comparison",
+      "expected_behavior": "answer",
+      "reference_answer": "Distribution of confirmed and probable cases by week of specimen date between 1 July 2024 and 16 January 2025 (n = 7), showing key dates and interventions in the UK, 2024 .UK [1] The key findings of this report are as follows: there was a 44% increase in scabies diagnoses at sexual health services between 2023 and 2024 (4,872 in 2024, up from 3,393 in 2023), with diagnoses in 2024 exceeding th... [2]",
+      "required_keywords": [
+        "2025",
+        "2026",
+        "differences",
+        "trends"
+      ],
+      "evidence": [
+        {
+          "source": "HPR volume 19 issue 1_ news (23 and 30 January 2025) - GOV.UK.pdf",
+          "page": 6,
+          "chunk_id": "HPR volume 19 issue 1_ news (23 and 30 January 2025) - GOV.UK.pdf#p6#c3",
+          "retrieval_score": 7.5521,
+          "quote": "Distribution of confirmed and probable cases by week of specimen date between 1 July 2024 and 16 January 2025 (n = 7), showing key dates and interventions in the UK, 2024 .UK"
+        },
+        {
+          "source": "HPR volume 19 issue 10_ news (30 and 31 October 2025) - GOV.UK.pdf",
+          "page": 3,
+          "chunk_id": "HPR volume 19 issue 10_ news (30 and 31 October 2025) - GOV.UK.pdf#p3#c2",
+          "retrieval_score": 6.168614,
+          "quote": "The key findings of this report are as follows: there was a 44% increase in scabies diagnoses at sexual health services between 2023 and 2024 (4,872 in 2024, up from 3,393 in 2023), with diagnoses in 2024 exceeding th..."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": true,
+        "allow_abstention": false,
+        "min_supported_claims": 1
+      },
+      "notes": "Answer should stay within cited evidence and avoid unsupported claims."
+    },
+    {
+      "id": "hpr-grounded-007",
+      "question": "How have disease trends changed between 2025 and 2026?",
+      "type": "comparison",
+      "expected_behavior": "answer",
+      "reference_answer": "Confirmed cases have been identified between 27 May 2025 and 20 October 2025. [1] Four reported sex between men and women including 1 woman with very recently acquired HIV, identified by Nucleic Acid Testing (NAT) alone, who did not report information that may have made them ineligible. [2]",
+      "required_keywords": [
+        "disease trends",
+        "increase",
+        "decrease",
+        "2025",
+        "2026"
+      ],
+      "evidence": [
+        {
+          "source": "HPR volume 19 issue 11_ news (4 December 2025) - GOV.UK.pdf",
+          "page": 3,
+          "chunk_id": "HPR volume 19 issue 11_ news (4 December 2025) - GOV.UK.pdf#p3#c1",
+          "retrieval_score": 6.661997,
+          "quote": "Confirmed cases have been identified between 27 May 2025 and 20 October 2025."
+        },
+        {
+          "source": "HPR volume 19 issue 10_ news (30 and 31 October 2025) - GOV.UK.pdf",
+          "page": 9,
+          "chunk_id": "HPR volume 19 issue 10_ news (30 and 31 October 2025) - GOV.UK.pdf#p9#c2",
+          "retrieval_score": 6.349915,
+          "quote": "Four reported sex between men and women including 1 woman with very recently acquired HIV, identified by Nucleic Acid Testing (NAT) alone, who did not report information that may have made them ineligible."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": true,
+        "allow_abstention": false,
+        "min_supported_claims": 1
+      },
+      "notes": "Answer should stay within cited evidence and avoid unsupported claims."
+    },
+    {
+      "id": "hpr-grounded-008",
+      "question": "What new public health concerns appear in the 2026 report?",
+      "type": "comparison",
+      "expected_behavior": "answer",
+      "reference_answer": "( new-report-explores-the-hidden-impact/) \u2018What is the difference between Weather-Health Alerts and Severe Weather Warnings? [1] Principal benefits of this development are faster public health action to reduce disease transmission and support prompt response to infectious disease outbreaks, and improved local and national surveillance. [2]",
+      "required_keywords": [
+        "2026",
+        "new concerns",
+        "public health",
+        "emerging"
+      ],
+      "evidence": [
+        {
+          "source": "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf",
+          "page": 7,
+          "chunk_id": "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf#p7#c0",
+          "retrieval_score": 6.686765,
+          "quote": "( new-report-explores-the-hidden-impact/) \u2018What is the difference between Weather-Health Alerts and Severe Weather Warnings?"
+        },
+        {
+          "source": "HPR volume 19 issue 5_ news (21 and 29 May 2025) - GOV.UK.pdf",
+          "page": 5,
+          "chunk_id": "HPR volume 19 issue 5_ news (21 and 29 May 2025) - GOV.UK.pdf#p5#c2",
+          "retrieval_score": 6.39849,
+          "quote": "Principal benefits of this development are faster public health action to reduce disease transmission and support prompt response to infectious disease outbreaks, and improved local and national surveillance."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": true,
+        "allow_abstention": false,
+        "min_supported_claims": 1
+      },
+      "notes": "Answer should stay within cited evidence and avoid unsupported claims."
+    },
+    {
+      "id": "hpr-grounded-009",
+      "question": "How do surveillance approaches differ across reports?",
+      "type": "comparison",
+      "expected_behavior": "answer",
+      "reference_answer": "\u2018Syndromic surveillance: systems and analyses ( analyses)\u2019. [1] This includes reporting from general practice surveillance, such as the Royal College of General Practitioners Research and Surveillance Centre, which has shown that scabies consultations have recently been higher tha... [2] This indicates surveillance approaches.",
+      "required_keywords": [
+        "surveillance approaches",
+        "methods",
+        "differences",
+        "reports"
+      ],
+      "evidence": [
+        {
+          "source": "HPR volume 19 issue 8_ news (7, 14 and 28 August 2025) - GOV.UK.pdf",
+          "page": 6,
+          "chunk_id": "HPR volume 19 issue 8_ news (7, 14 and 28 August 2025) - GOV.UK.pdf#p6#c1",
+          "retrieval_score": 7.988387,
+          "quote": "\u2018Syndromic surveillance: systems and analyses ( analyses)\u2019."
+        },
+        {
+          "source": "HPR volume 19 issue 10_ news (30 and 31 October 2025) - GOV.UK.pdf",
+          "page": 3,
+          "chunk_id": "HPR volume 19 issue 10_ news (30 and 31 October 2025) - GOV.UK.pdf#p3#c1",
+          "retrieval_score": 6.102096,
+          "quote": "This includes reporting from general practice surveillance, such as the Royal College of General Practitioners Research and Surveillance Centre, which has shown that scabies consultations have recently been higher tha..."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": true,
+        "allow_abstention": false,
+        "min_supported_claims": 1
+      },
+      "notes": "Answer should stay within cited evidence and avoid unsupported claims."
+    },
+    {
+      "id": "hpr-grounded-010",
+      "question": "What changes in reporting or methodology are observed between volumes?",
+      "type": "comparison",
+      "expected_behavior": "answer",
+      "reference_answer": "However, further work to understand the relative contributions of other factors, such as, increased use of PCR multiplex technology at frontline diagnostic laboratories and changes in reporting are ongoing. [1] Systematic shifts between the previous and new media were observed for MICs of azithromycin, cefixime and penicillin, therefore changes in prevalence of resistance to these agents may be under- or over-estimated in pr... [2] This indicates methodology.",
+      "required_keywords": [
+        "methodology",
+        "reporting changes",
+        "volumes",
+        "comparative"
+      ],
+      "evidence": [
+        {
+          "source": "HPR volume 19 issue 2_ news (27 February 2025) - GOV.UK.pdf",
+          "page": 5,
+          "chunk_id": "HPR volume 19 issue 2_ news (27 February 2025) - GOV.UK.pdf#p5#c1",
+          "retrieval_score": 9.300471,
+          "quote": "However, further work to understand the relative contributions of other factors, such as, increased use of PCR multiplex technology at frontline diagnostic laboratories and changes in reporting are ongoing."
+        },
+        {
+          "source": "HPR volume 19 issue 11_ news (4 December 2025) - GOV.UK.pdf",
+          "page": 15,
+          "chunk_id": "HPR volume 19 issue 11_ news (4 December 2025) - GOV.UK.pdf#p15#c0",
+          "retrieval_score": 9.24886,
+          "quote": "Systematic shifts between the previous and new media were observed for MICs of azithromycin, cefixime and penicillin, therefore changes in prevalence of resistance to these agents may be under- or over-estimated in pr..."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": true,
+        "allow_abstention": false,
+        "min_supported_claims": 1
+      },
+      "notes": "Answer should stay within cited evidence and avoid unsupported claims."
+    },
+    {
+      "id": "hpr-grounded-011",
+      "question": "What are the main public health risks identified across the reports?",
+      "type": "analysis",
+      "expected_behavior": "answer",
+      "reference_answer": "\u2018Global epidemiology and health risks of Bacillus cereus infections: special focus on infant foods ( Food Research International: volume 201. [1] Contamination of such products has the potential to expose large numbers of people across a wide geography. [2] This indicates public health risks.",
+      "required_keywords": [
+        "public health risks",
+        "outbreaks",
+        "transmission",
+        "risk factors"
+      ],
+      "evidence": [
+        {
+          "source": "HPR volume 20 issue 1_ news (29 January and 5 February 2026) - GOV.UK.pdf",
+          "page": 4,
+          "chunk_id": "HPR volume 20 issue 1_ news (29 January and 5 February 2026) - GOV.UK.pdf#p4#c1",
+          "retrieval_score": 8.964338,
+          "quote": "\u2018Global epidemiology and health risks of Bacillus cereus infections: special focus on infant foods ( Food Research International: volume 201."
+        },
+        {
+          "source": "HPR volume 19 issue 12_ news (18 and 19 December 2025) - GOV.UK.pdf",
+          "page": 3,
+          "chunk_id": "HPR volume 19 issue 12_ news (18 and 19 December 2025) - GOV.UK.pdf#p3#c0",
+          "retrieval_score": 8.055331,
+          "quote": "Contamination of such products has the potential to expose large numbers of people across a wide geography."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": true,
+        "allow_abstention": false,
+        "min_supported_claims": 1
+      },
+      "notes": "Answer should stay within cited evidence and avoid unsupported claims."
+    },
+    {
+      "id": "hpr-grounded-012",
+      "question": "What strategies are recommended to reduce disease spread?",
+      "type": "analysis",
+      "expected_behavior": "answer",
+      "reference_answer": "Food Standards Agency guidance on how to reduce your risk of food poisoning is available at food safety and hygiene guidance ( UKHSA guidance on how to prevent onward norovirus transmission is available at: Norovirus:... [1] auris and put in place measures to reduce risks to patients and the public. [2] This indicates prevention.",
+      "required_keywords": [
+        "prevention",
+        "control measures",
+        "surveillance",
+        "interventions"
+      ],
+      "evidence": [
+        {
+          "source": "HPR volume 19 issue 9_ news (25 September 2025) - GOV.UK.pdf",
+          "page": 7,
+          "chunk_id": "HPR volume 19 issue 9_ news (25 September 2025) - GOV.UK.pdf#p7#c1",
+          "retrieval_score": 13.457219,
+          "quote": "Food Standards Agency guidance on how to reduce your risk of food poisoning is available at food safety and hygiene guidance ( UKHSA guidance on how to prevent onward norovirus transmission is available at: Norovirus:..."
+        },
+        {
+          "source": "HPR volume 19 issue 3_ news (27 and 31 March 2025) - GOV.UK.pdf",
+          "page": 6,
+          "chunk_id": "HPR volume 19 issue 3_ news (27 and 31 March 2025) - GOV.UK.pdf#p6#c0",
+          "retrieval_score": 7.654936,
+          "quote": "auris and put in place measures to reduce risks to patients and the public."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": true,
+        "allow_abstention": false,
+        "min_supported_claims": 1
+      },
+      "notes": "Answer should stay within cited evidence and avoid unsupported claims."
+    },
+    {
+      "id": "hpr-grounded-013",
+      "question": "How do the reports suggest improving health protection systems?",
+      "type": "analysis",
+      "expected_behavior": "answer",
+      "reference_answer": "The Games provided a major challenge to the then Health Protection Agency to prepare health protection systems to cope with the increased demands and threats of this major mass gathering. [1] findings suggest that the campaign was a creative success which achieved a high engagement rate for the target audience. [2]",
+      "required_keywords": [
+        "improving systems",
+        "health protection",
+        "capacity",
+        "response"
+      ],
+      "evidence": [
+        {
+          "source": "HPR volume 19 issue 8_ news (7, 14 and 28 August 2025) - GOV.UK.pdf",
+          "page": 5,
+          "chunk_id": "HPR volume 19 issue 8_ news (7, 14 and 28 August 2025) - GOV.UK.pdf#p5#c2",
+          "retrieval_score": 6.789711,
+          "quote": "The Games provided a major challenge to the then Health Protection Agency to prepare health protection systems to cope with the increased demands and threats of this major mass gathering."
+        },
+        {
+          "source": "HPR volume 19 issue 11_ news (4 December 2025) - GOV.UK.pdf",
+          "page": 12,
+          "chunk_id": "HPR volume 19 issue 11_ news (4 December 2025) - GOV.UK.pdf#p12#c2",
+          "retrieval_score": 5.333027,
+          "quote": "findings suggest that the campaign was a creative success which achieved a high engagement rate for the target audience."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": true,
+        "allow_abstention": false,
+        "min_supported_claims": 1
+      },
+      "notes": "Answer should stay within cited evidence and avoid unsupported claims."
+    },
+    {
+      "id": "hpr-grounded-014",
+      "question": "What role does data analysis play in public health decision-making?",
+      "type": "analysis",
+      "expected_behavior": "answer",
+      "reference_answer": "ches or involve multiple microorganisms, making it difficult to identify and/or link to infections challenges in removing contaminated products from use \u2013 for example, product recalls are not always possible, timely o... [1] Outbreak of Salmonella Enteritidis in theUK, November 2025 In August 2025, the Gastrointestinal Infections, Food Safety and One Health (GIFSOH) team at the UK Health Security Agency (UKHSA) identified an increase in t... [2] This indicates data analysis.",
+      "required_keywords": [
+        "data analysis",
+        "decision-making",
+        "surveillance",
+        "evidence"
+      ],
+      "evidence": [
+        {
+          "source": "HPR volume 19 issue 12_ news (18 and 19 December 2025) - GOV.UK.pdf",
+          "page": 4,
+          "chunk_id": "HPR volume 19 issue 12_ news (18 and 19 December 2025) - GOV.UK.pdf#p4#c3",
+          "retrieval_score": 8.545445,
+          "quote": "ches or involve multiple microorganisms, making it difficult to identify and/or link to infections challenges in removing contaminated products from use \u2013 for example, product recalls are not always possible, timely o..."
+        },
+        {
+          "source": "HPR volume 19 issue 11_ news (4 December 2025) - GOV.UK.pdf",
+          "page": 3,
+          "chunk_id": "HPR volume 19 issue 11_ news (4 December 2025) - GOV.UK.pdf#p3#c0",
+          "retrieval_score": 7.588425,
+          "quote": "Outbreak of Salmonella Enteritidis in theUK, November 2025 In August 2025, the Gastrointestinal Infections, Food Safety and One Health (GIFSOH) team at the UK Health Security Agency (UKHSA) identified an increase in t..."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": true,
+        "allow_abstention": false,
+        "min_supported_claims": 1
+      },
+      "notes": "Answer should stay within cited evidence and avoid unsupported claims."
+    },
+    {
+      "id": "hpr-grounded-015",
+      "question": "What are the most significant findings across the reports?",
+      "type": "analysis",
+      "expected_behavior": "answer",
+      "reference_answer": "It was regained in 2021 based on a significant decline in measles circulation globally due to the COVID-19 pandemic. [1] findings suggest that the campaign was a creative success which achieved a high engagement rate for the target audience. [2] This indicates significant findings.",
+      "required_keywords": [
+        "significant findings",
+        "key findings",
+        "trends",
+        "impact"
+      ],
+      "evidence": [
+        {
+          "source": "HPR volume 20 issue 1_ news (29 January and 5 February 2026) - GOV.UK.pdf",
+          "page": 8,
+          "chunk_id": "HPR volume 20 issue 1_ news (29 January and 5 February 2026) - GOV.UK.pdf#p8#c0",
+          "retrieval_score": 6.796973,
+          "quote": "It was regained in 2021 based on a significant decline in measles circulation globally due to the COVID-19 pandemic."
+        },
+        {
+          "source": "HPR volume 19 issue 11_ news (4 December 2025) - GOV.UK.pdf",
+          "page": 12,
+          "chunk_id": "HPR volume 19 issue 11_ news (4 December 2025) - GOV.UK.pdf#p12#c2",
+          "retrieval_score": 6.115681,
+          "quote": "findings suggest that the campaign was a creative success which achieved a high engagement rate for the target audience."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": true,
+        "allow_abstention": false,
+        "min_supported_claims": 1
+      },
+      "notes": "Answer should stay within cited evidence and avoid unsupported claims."
+    },
+    {
+      "id": "hpr-grounded-016",
+      "question": "What vaccination policy changes are proposed for 2030?",
+      "type": "edge",
+      "expected_behavior": "abstain",
+      "reference_answer": "I don't know.",
+      "required_keywords": [],
+      "evidence": [
+        {
+          "source": "HPR volume 19 issue 6_ news (26 and 30 June 2025) - GOV.UK.pdf",
+          "page": 5,
+          "chunk_id": "HPR volume 19 issue 6_ news (26 and 30 June 2025) - GOV.UK.pdf#p5#c1",
+          "retrieval_score": 7.40036,
+          "quote": "Key guidance for immunisation professionals and other healthcare practitioners is available as follows: \u2018The UK Immunisation Schedule: the Green Book, chapter 11 ( book-chapter-11)\u2019, which has been updated to take acc..."
+        },
+        {
+          "source": "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf",
+          "page": 8,
+          "chunk_id": "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf#p8#c4",
+          "retrieval_score": 5.016676,
+          "quote": "pean Food Safety Authority (EFSA) (6) has recently proposed acute reference doses (ARfD) for cereulide toxin in infants."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": false,
+        "allow_abstention": true,
+        "min_supported_claims": 0
+      },
+      "notes": "Edge-case abstention test."
+    },
+    {
+      "id": "hpr-grounded-017",
+      "question": "What AI systems are currently deployed nationwide in UK public health?",
+      "type": "edge",
+      "expected_behavior": "abstain",
+      "reference_answer": "I don't know.",
+      "required_keywords": [],
+      "evidence": [
+        {
+          "source": "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf",
+          "page": 8,
+          "chunk_id": "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf#p8#c2",
+          "retrieval_score": 8.737298,
+          "quote": "Healthcare professionals in England have been advised to notify suspected cases to UKHSA (and similarly elsewhere in UK to public health agencies) and to undertake clinical assessment and stool culture for toxigenic B."
+        },
+        {
+          "source": "HPR volume 19 issue 8_ news (7, 14 and 28 August 2025) - GOV.UK.pdf",
+          "page": 3,
+          "chunk_id": "HPR volume 19 issue 8_ news (7, 14 and 28 August 2025) - GOV.UK.pdf#p3#c2",
+          "retrieval_score": 7.545947,
+          "quote": "Injectable botulinum toxin type products currently licensed in the UK for aesthetic procedures include Alluzience\u00ae, Azzalure\u00ae, Bocouture\u00ae, Botox\u00ae, Letybo\u00ae, Nuceiva\u00ae and Relfydess\u00ae."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": false,
+        "allow_abstention": true,
+        "min_supported_claims": 0
+      },
+      "notes": "Edge-case abstention test."
+    },
+    {
+      "id": "hpr-grounded-018",
+      "question": "What budget allocation changes are detailed for future health services?",
+      "type": "edge",
+      "expected_behavior": "abstain",
+      "reference_answer": "I don't know.",
+      "required_keywords": [],
+      "evidence": [
+        {
+          "source": "HPR volume 19 issue 8_ news (7, 14 and 28 August 2025) - GOV.UK.pdf",
+          "page": 6,
+          "chunk_id": "HPR volume 19 issue 8_ news (7, 14 and 28 August 2025) - GOV.UK.pdf#p6#c1",
+          "retrieval_score": 7.899637,
+          "quote": "This article was written by Alex Elliot, Helen Hughes and Dan Todkill on behalf of the Real-time Syndromic Surveillance Team in the UKHSA Field Services Division."
+        },
+        {
+          "source": "HPR volume 19 issue 11_ news (4 December 2025) - GOV.UK.pdf",
+          "page": 15,
+          "chunk_id": "HPR volume 19 issue 11_ news (4 December 2025) - GOV.UK.pdf#p15#c0",
+          "retrieval_score": 6.988986,
+          "quote": "Sexual health services should report cases of suspected treatment failure to UKHSA via the online HIV and STI Data Exchange ( (access is restricted to registered users)."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": false,
+        "allow_abstention": true,
+        "min_supported_claims": 0
+      },
+      "notes": "Edge-case abstention test."
+    },
+    {
+      "id": "hpr-grounded-019",
+      "question": "What international agreements are introduced in these reports?",
+      "type": "edge",
+      "expected_behavior": "abstain",
+      "reference_answer": "I don't know.",
+      "required_keywords": [],
+      "evidence": [
+        {
+          "source": "HPR volume 19 issue 6_ news (26 and 30 June 2025) - GOV.UK.pdf",
+          "page": 4,
+          "chunk_id": "HPR volume 19 issue 6_ news (26 and 30 June 2025) - GOV.UK.pdf#p4#c0",
+          "retrieval_score": 5.692997,
+          "quote": "\u2018Quarterly report on diagnoses of syphilis, gonorrhoea and ceftriaxone-resistant gonorrhoea in England: provisional data, June 2025 ( provisional-data/quarterly-report-on-diagnoses-of-syphilis-gonorrhoea-and- ceftriax..."
+        },
+        {
+          "source": "HPR volume 20 issue 1_ news (29 January and 5 February 2026) - GOV.UK.pdf",
+          "page": 4,
+          "chunk_id": "HPR volume 20 issue 1_ news (29 January and 5 February 2026) - GOV.UK.pdf#p4#c1",
+          "retrieval_score": 5.165875,
+          "quote": "ase in reports of vomiting in children under 1 year of age from hospitals, primary care or NHS111 for this time of year."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": false,
+        "allow_abstention": true,
+        "min_supported_claims": 0
+      },
+      "notes": "Edge-case abstention test."
+    },
+    {
+      "id": "hpr-grounded-020",
+      "question": "What pharmaceutical treatments are newly approved according to the reports?",
+      "type": "edge",
+      "expected_behavior": "abstain",
+      "reference_answer": "I don't know.",
+      "required_keywords": [],
+      "evidence": [
+        {
+          "source": "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf",
+          "page": 6,
+          "chunk_id": "HPR volume 20 issue 2_ news (26 February and 5 March 2026) - GOV.UK.pdf#p6#c0",
+          "retrieval_score": 5.296948,
+          "quote": "Impact of influenza circulation on cold-related deaths The report mainly considers cold-related deaths from all causes occurring during the reporting period and includes a figure showing mortality broken down accordin..."
+        },
+        {
+          "source": "HPR volume 19 issue 8_ news (7, 14 and 28 August 2025) - GOV.UK.pdf",
+          "page": 3,
+          "chunk_id": "HPR volume 19 issue 8_ news (7, 14 and 28 August 2025) - GOV.UK.pdf#p3#c1",
+          "retrieval_score": 5.191184,
+          "quote": "n, with investigations showing that the majority of individuals received products that are unlicensed for use in the UK."
+        }
+      ],
+      "rubric": {
+        "must_be_grounded_in_evidence": true,
+        "must_include_citation_markers": false,
+        "allow_abstention": true,
+        "min_supported_claims": 0
+      },
+      "notes": "Edge-case abstention test."
+    }
+  ]
+}

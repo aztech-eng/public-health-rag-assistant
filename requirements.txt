@@ -1,0 +1,7 @@
+openai
+python-dotenv
+pypdf
+chromadb
+numpy
+fastapi
+uvicorn
